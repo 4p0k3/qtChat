@@ -1,0 +1,3 @@
+C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\chatServer.dir/objects.a
+C:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\chatServer.dir/objects.a @CMakeFiles\chatServer.dir\objects1.rsp
+C:\Qt\Tools\mingw1310_64\bin\g++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\chatServer.dir/objects.a -Wl,--no-whole-archive -o chatServer.exe -Wl,--out-implib,libchatServer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\chatServer.dir\linkLibs.rsp
