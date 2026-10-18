@@ -40,6 +40,8 @@ void Server::onReadyRead(){
     QByteArray data = clientSocket->readAll();
 
     qDebug() << "Message recieved: " << data;
+    // Переводим байты в текст и выводим прямо в интерфейс сервера
+    ui->textEdit->append(QString::fromUtf8(data));
 
     for(int i=0; i<clients.size(); i++){
         clients[i]->write(data);

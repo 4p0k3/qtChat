@@ -56,10 +56,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\programming\qt_projects\chat\chatClient
+CMAKE_SOURCE_DIR = C:\programming\qt_projects\qtChat\chatClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug
+CMAKE_BINARY_DIR = C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,9 +131,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -271,6 +271,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\chatClient.dir\build.make CMakeFiles/chatClient.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+networkmanager.obj: networkmanager.cpp.obj
+.PHONY : networkmanager.obj
+
+# target to build an object file
+networkmanager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chatClient.dir\build.make CMakeFiles/chatClient.dir/networkmanager.cpp.obj
+.PHONY : networkmanager.cpp.obj
+
+networkmanager.i: networkmanager.cpp.i
+.PHONY : networkmanager.i
+
+# target to preprocess a source file
+networkmanager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chatClient.dir\build.make CMakeFiles/chatClient.dir/networkmanager.cpp.i
+.PHONY : networkmanager.cpp.i
+
+networkmanager.s: networkmanager.cpp.s
+.PHONY : networkmanager.s
+
+# target to generate assembly for a file
+networkmanager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\chatClient.dir\build.make CMakeFiles/chatClient.dir/networkmanager.cpp.s
+.PHONY : networkmanager.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -295,6 +319,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... networkmanager.obj
+	@echo ... networkmanager.i
+	@echo ... networkmanager.s
 .PHONY : help
 
 

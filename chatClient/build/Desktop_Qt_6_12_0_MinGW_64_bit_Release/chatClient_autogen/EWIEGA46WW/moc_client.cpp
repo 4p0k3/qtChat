@@ -39,16 +39,44 @@ template <> constexpr inline auto Client::qt_create_metaobjectdata<qt_meta_tag_Z
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "Client",
-        "onReadyRead",
+        "onNewMessageRecieved",
         "",
-        "on_pushButton_clicked"
+        "text",
+        "onActionSuccessful",
+        "ActionType",
+        "type",
+        "on_btnCreateChat_clicked",
+        "on_btnConnect_clicked",
+        "on_btnMenu_clicked",
+        "on_btnSendMessage_clicked",
+        "on_btnDeleteChat_clicked",
+        "on_btnReturn_clicked",
+        "on_btnLeaveChat_clicked"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Slot 'onReadyRead'
-        QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'on_pushButton_clicked'
-        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onNewMessageRecieved'
+        QtMocHelpers::SlotData<void(QString)>(1, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 3 },
+        }}),
+        // Slot 'onActionSuccessful'
+        QtMocHelpers::SlotData<void(ActionType)>(4, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 5, 6 },
+        }}),
+        // Slot 'on_btnCreateChat_clicked'
+        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_btnConnect_clicked'
+        QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_btnMenu_clicked'
+        QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_btnSendMessage_clicked'
+        QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_btnDeleteChat_clicked'
+        QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_btnReturn_clicked'
+        QtMocHelpers::SlotData<void()>(12, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_btnLeaveChat_clicked'
+        QtMocHelpers::SlotData<void()>(13, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -72,12 +100,18 @@ void Client::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
     auto *_t = static_cast<Client *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->onReadyRead(); break;
-        case 1: _t->on_pushButton_clicked(); break;
+        case 0: _t->onNewMessageRecieved((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 1: _t->onActionSuccessful((*reinterpret_cast<std::add_pointer_t<ActionType>>(_a[1]))); break;
+        case 2: _t->on_btnCreateChat_clicked(); break;
+        case 3: _t->on_btnConnect_clicked(); break;
+        case 4: _t->on_btnMenu_clicked(); break;
+        case 5: _t->on_btnSendMessage_clicked(); break;
+        case 6: _t->on_btnDeleteChat_clicked(); break;
+        case 7: _t->on_btnReturn_clicked(); break;
+        case 8: _t->on_btnLeaveChat_clicked(); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *Client::metaObject() const
@@ -99,14 +133,14 @@ int Client::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 9;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 9;
     }
     return _id;
 }

@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/chatClient.dir/client.cpp.obj.d"
   "CMakeFiles/chatClient.dir/main.cpp.obj"
   "CMakeFiles/chatClient.dir/main.cpp.obj.d"
+  "CMakeFiles/chatClient.dir/networkmanager.cpp.obj"
+  "CMakeFiles/chatClient.dir/networkmanager.cpp.obj.d"
   "chatClient.exe"
   "chatClient.exe.manifest"
   "chatClient.pdb"

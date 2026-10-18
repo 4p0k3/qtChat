@@ -1,7 +1,7 @@
 CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.obj: \
- C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\chatClient_autogen\mocs_compilation.cpp \
- C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\chatClient_autogen\EWIEGA46WW/moc_client.cpp \
- C:/programming/qt_projects/chat/chatClient/client.h \
+ C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\chatClient_autogen\mocs_compilation.cpp \
+ C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\chatClient_autogen\EWIEGA46WW/moc_client.cpp \
+ C:/programming/qt_projects/qtChat/chatClient/client.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -396,6 +396,12 @@ CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.12.0/mingw_64/include/QtNetwork/qabstractsocket.h \
  C:/Qt/6.12.0/mingw_64/include/QtCore/qiodevice.h \
  C:/Qt/6.12.0/mingw_64/include/QtNetwork/qhostaddress.h \
+ C:/programming/qt_projects/qtChat/chatClient/networkmanager.h \
+ C:/Qt/6.12.0/mingw_64/include/QtNetwork/QTcpServer \
+ C:/Qt/6.12.0/mingw_64/include/QtNetwork/qtcpserver.h \
+ C:/Qt/6.12.0/mingw_64/include/QtCore/QObject \
  C:/Qt/6.12.0/mingw_64/include/QtCore/qtmochelpers.h \
  C:/Qt/6.12.0/mingw_64/include/QtCore/qtmocconstants.h \
- C:/Qt/6.12.0/mingw_64/include/QtCore/q20algorithm.h
+ C:/Qt/6.12.0/mingw_64/include/QtCore/q20algorithm.h \
+ C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\chatClient_autogen\EWIEGA46WW/moc_networkmanager.cpp \
+ C:/programming/qt_projects/qtChat/chatClient/networkmanager.h

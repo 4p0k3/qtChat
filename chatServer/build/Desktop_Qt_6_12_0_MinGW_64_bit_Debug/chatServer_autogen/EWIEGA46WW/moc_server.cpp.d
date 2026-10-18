@@ -1,5 +1,5 @@
-C:/programming/qt_projects/chat/chatServer/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/chatServer_autogen/EWIEGA46WW/moc_server.cpp: C:/programming/qt_projects/chat/chatServer/server.h \
-  C:/programming/qt_projects/chat/chatServer/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/chatServer_autogen/moc_predefs.h \
+C:/programming/qt_projects/qtChat/chatServer/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/chatServer_autogen/EWIEGA46WW/moc_server.cpp: C:/programming/qt_projects/qtChat/chatServer/server.h \
+  C:/programming/qt_projects/qtChat/chatServer/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/chatServer_autogen/moc_predefs.h \
   C:/Qt/6.12.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.12.0/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.12.0/mingw_64/include/QtCore/q20functional.h \

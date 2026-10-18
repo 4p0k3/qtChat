@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\programming\qt_projects\chat\chatClient
+CMAKE_SOURCE_DIR = C:\programming\qt_projects\qtChat\chatClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Release
+CMAKE_BINARY_DIR = C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Release
 
 # Utility rule file for chatClient_autogen.
 
@@ -70,9 +70,9 @@ CMakeFiles/chatClient_autogen: chatClient_autogen/timestamp
 chatClient_autogen/timestamp: C:/Qt/6.12.0/mingw_64/bin/moc.exe
 chatClient_autogen/timestamp: C:/Qt/6.12.0/mingw_64/bin/uic.exe
 chatClient_autogen/timestamp: CMakeFiles/chatClient_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target chatClient"
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/CMakeFiles/chatClient_autogen.dir/AutogenInfo.json Release
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/chatClient_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target chatClient"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/CMakeFiles/chatClient_autogen.dir/AutogenInfo.json Release
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/chatClient_autogen/timestamp
 
 chatClient_autogen: CMakeFiles/chatClient_autogen
 chatClient_autogen: chatClient_autogen/timestamp
@@ -88,6 +88,6 @@ CMakeFiles/chatClient_autogen.dir/clean:
 .PHONY : CMakeFiles/chatClient_autogen.dir/clean
 
 CMakeFiles/chatClient_autogen.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\programming\qt_projects\chat\chatClient C:\programming\qt_projects\chat\chatClient C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Release C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Release C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Release\CMakeFiles\chatClient_autogen.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\programming\qt_projects\qtChat\chatClient C:\programming\qt_projects\qtChat\chatClient C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Release C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Release C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Release\CMakeFiles\chatClient_autogen.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/chatClient_autogen.dir/depend
 

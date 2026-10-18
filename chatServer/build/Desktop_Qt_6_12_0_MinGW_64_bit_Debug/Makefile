@@ -56,10 +56,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\programming\qt_projects\chat\chatServer
+CMAKE_SOURCE_DIR = C:\programming\qt_projects\qtChat\chatServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\programming\qt_projects\chat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug
+CMAKE_BINARY_DIR = C:\programming\qt_projects\qtChat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -131,9 +131,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\programming\qt_projects\chat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles C:\programming\qt_projects\chat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\programming\qt_projects\qtChat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles C:\programming\qt_projects\qtChat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\programming\qt_projects\chat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\programming\qt_projects\qtChat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target

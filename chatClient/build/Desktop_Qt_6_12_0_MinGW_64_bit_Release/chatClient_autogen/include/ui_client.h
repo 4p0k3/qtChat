@@ -13,9 +13,8 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
@@ -25,11 +24,19 @@ class Ui_Client
 {
 public:
     QWidget *centralwidget;
-    QLineEdit *lineEdit_2;
-    QTextEdit *textEdit_2;
-    QPushButton *pushButton;
-    QMenuBar *menubar;
-    QStatusBar *statusbar;
+    QStackedWidget *stackedWidget;
+    QWidget *pageLobbySelect;
+    QPushButton *btnCreateChat;
+    QPushButton *btnConnect;
+    QLineEdit *lineIPInput;
+    QLineEdit *linePortInput;
+    QPushButton *btnReturn;
+    QWidget *pageChat;
+    QTextEdit *editMessageHistory;
+    QPushButton *btnSendMessage;
+    QLineEdit *lineMessageInput;
+    QPushButton *btnMenu;
+    QPushButton *btnDeleteChat;
 
     void setupUi(QMainWindow *Client)
     {
@@ -38,26 +45,54 @@ public:
         Client->resize(800, 600);
         centralwidget = new QWidget(Client);
         centralwidget->setObjectName("centralwidget");
-        lineEdit_2 = new QLineEdit(centralwidget);
-        lineEdit_2->setObjectName("lineEdit_2");
-        lineEdit_2->setGeometry(QRect(22, 510, 641, 28));
-        textEdit_2 = new QTextEdit(centralwidget);
-        textEdit_2->setObjectName("textEdit_2");
-        textEdit_2->setGeometry(QRect(20, 20, 751, 471));
-        textEdit_2->setReadOnly(true);
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(680, 510, 90, 29));
+        stackedWidget = new QStackedWidget(centralwidget);
+        stackedWidget->setObjectName("stackedWidget");
+        stackedWidget->setGeometry(QRect(0, 0, 801, 601));
+        pageLobbySelect = new QWidget();
+        pageLobbySelect->setObjectName("pageLobbySelect");
+        btnCreateChat = new QPushButton(pageLobbySelect);
+        btnCreateChat->setObjectName("btnCreateChat");
+        btnCreateChat->setGeometry(QRect(350, 250, 90, 29));
+        btnConnect = new QPushButton(pageLobbySelect);
+        btnConnect->setObjectName("btnConnect");
+        btnConnect->setGeometry(QRect(340, 340, 121, 29));
+        lineIPInput = new QLineEdit(pageLobbySelect);
+        lineIPInput->setObjectName("lineIPInput");
+        lineIPInput->setGeometry(QRect(310, 300, 171, 28));
+        linePortInput = new QLineEdit(pageLobbySelect);
+        linePortInput->setObjectName("linePortInput");
+        linePortInput->setGeometry(QRect(360, 390, 71, 28));
+        btnReturn = new QPushButton(pageLobbySelect);
+        btnReturn->setObjectName("btnReturn");
+        btnReturn->setGeometry(QRect(20, 20, 111, 29));
+        btnReturn->setFlat(false);
+        stackedWidget->addWidget(pageLobbySelect);
+        pageChat = new QWidget();
+        pageChat->setObjectName("pageChat");
+        editMessageHistory = new QTextEdit(pageChat);
+        editMessageHistory->setObjectName("editMessageHistory");
+        editMessageHistory->setGeometry(QRect(130, 30, 641, 471));
+        editMessageHistory->setReadOnly(true);
+        btnSendMessage = new QPushButton(pageChat);
+        btnSendMessage->setObjectName("btnSendMessage");
+        btnSendMessage->setGeometry(QRect(680, 540, 90, 29));
+        lineMessageInput = new QLineEdit(pageChat);
+        lineMessageInput->setObjectName("lineMessageInput");
+        lineMessageInput->setGeometry(QRect(130, 540, 531, 28));
+        btnMenu = new QPushButton(pageChat);
+        btnMenu->setObjectName("btnMenu");
+        btnMenu->setGeometry(QRect(20, 30, 90, 29));
+        btnDeleteChat = new QPushButton(pageChat);
+        btnDeleteChat->setObjectName("btnDeleteChat");
+        btnDeleteChat->setGeometry(QRect(20, 540, 90, 29));
+        stackedWidget->addWidget(pageChat);
         Client->setCentralWidget(centralwidget);
-        menubar = new QMenuBar(Client);
-        menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 800, 25));
-        Client->setMenuBar(menubar);
-        statusbar = new QStatusBar(Client);
-        statusbar->setObjectName("statusbar");
-        Client->setStatusBar(statusbar);
 
         retranslateUi(Client);
+
+        stackedWidget->setCurrentIndex(0);
+        btnSendMessage->setDefault(false);
+
 
         QMetaObject::connectSlotsByName(Client);
     } // setupUi
@@ -65,7 +100,14 @@ public:
     void retranslateUi(QMainWindow *Client)
     {
         Client->setWindowTitle(QCoreApplication::translate("Client", "Client", nullptr));
-        pushButton->setText(QCoreApplication::translate("Client", "Send", nullptr));
+        btnCreateChat->setText(QCoreApplication::translate("Client", "Create chat", nullptr));
+        btnConnect->setText(QCoreApplication::translate("Client", "Connect to chat", nullptr));
+        lineIPInput->setPlaceholderText(QCoreApplication::translate("Client", "ip address", nullptr));
+        linePortInput->setPlaceholderText(QCoreApplication::translate("Client", "port", nullptr));
+        btnReturn->setText(QCoreApplication::translate("Client", "Return to chat", nullptr));
+        btnSendMessage->setText(QCoreApplication::translate("Client", "Send", nullptr));
+        btnMenu->setText(QCoreApplication::translate("Client", "Menu", nullptr));
+        btnDeleteChat->setText(QCoreApplication::translate("Client", "Delete chat", nullptr));
     } // retranslateUi
 
 };

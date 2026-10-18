@@ -1,5 +1,6 @@
-C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/chatClient_autogen/EWIEGA46WW/moc_client.cpp: C:/programming/qt_projects/chat/chatClient/client.h \
-  C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/chatClient_autogen/moc_predefs.h \
+C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/chatClient_autogen/EWIEGA46WW/moc_client.cpp: C:/programming/qt_projects/qtChat/chatClient/client.h \
+  C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/chatClient_autogen/moc_predefs.h \
+  C:/Qt/6.12.0/mingw_64/include/QtCore/QObject \
   C:/Qt/6.12.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.12.0/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.12.0/mingw_64/include/QtCore/q20functional.h \
@@ -156,9 +157,11 @@ C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_
   C:/Qt/6.12.0/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.12.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.12.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.12.0/mingw_64/include/QtNetwork/QTcpServer \
   C:/Qt/6.12.0/mingw_64/include/QtNetwork/QTcpSocket \
   C:/Qt/6.12.0/mingw_64/include/QtNetwork/qabstractsocket.h \
   C:/Qt/6.12.0/mingw_64/include/QtNetwork/qhostaddress.h \
+  C:/Qt/6.12.0/mingw_64/include/QtNetwork/qtcpserver.h \
   C:/Qt/6.12.0/mingw_64/include/QtNetwork/qtcpsocket.h \
   C:/Qt/6.12.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
   C:/Qt/6.12.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
@@ -393,4 +396,5 @@ C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/programming/qt_projects/qtChat/chatClient/networkmanager.h

@@ -11,8 +11,10 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
@@ -24,6 +26,10 @@ class Ui_Server
 public:
     QWidget *centralwidget;
     QTextEdit *textEdit;
+    QStackedWidget *stackedWidget;
+    QWidget *page;
+    QWidget *page_2;
+    QLabel *label;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -36,7 +42,20 @@ public:
         centralwidget->setObjectName("centralwidget");
         textEdit = new QTextEdit(centralwidget);
         textEdit->setObjectName("textEdit");
-        textEdit->setGeometry(QRect(30, 10, 104, 85));
+        textEdit->setGeometry(QRect(20, 480, 361, 61));
+        textEdit->setReadOnly(true);
+        stackedWidget = new QStackedWidget(centralwidget);
+        stackedWidget->setObjectName("stackedWidget");
+        stackedWidget->setGeometry(QRect(640, 30, 120, 80));
+        page = new QWidget();
+        page->setObjectName("page");
+        stackedWidget->addWidget(page);
+        page_2 = new QWidget();
+        page_2->setObjectName("page_2");
+        stackedWidget->addWidget(page_2);
+        label = new QLabel(centralwidget);
+        label->setObjectName("label");
+        label->setGeometry(QRect(250, 210, 63, 20));
         Server->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Server);
         menubar->setObjectName("menubar");
@@ -48,12 +67,16 @@ public:
 
         retranslateUi(Server);
 
+        stackedWidget->setCurrentIndex(0);
+
+
         QMetaObject::connectSlotsByName(Server);
     } // setupUi
 
     void retranslateUi(QMainWindow *Server)
     {
         Server->setWindowTitle(QCoreApplication::translate("Server", "Server", nullptr));
+        label->setText(QCoreApplication::translate("Server", "TextLabel", nullptr));
     } // retranslateUi
 
 };

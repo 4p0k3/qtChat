@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\programming\qt_projects\chat\chatClient
+CMAKE_SOURCE_DIR = C:\programming\qt_projects\qtChat\chatClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug
+CMAKE_BINARY_DIR = C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/chatClient.dir/depend.make
@@ -71,60 +71,76 @@ include CMakeFiles/chatClient.dir/flags.make
 chatClient_autogen/timestamp: C:/Qt/6.12.0/mingw_64/bin/moc.exe
 chatClient_autogen/timestamp: C:/Qt/6.12.0/mingw_64/bin/uic.exe
 chatClient_autogen/timestamp: CMakeFiles/chatClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target chatClient"
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/CMakeFiles/chatClient_autogen.dir/AutogenInfo.json Debug
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/chatClient_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target chatClient"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/CMakeFiles/chatClient_autogen.dir/AutogenInfo.json Debug
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/chatClient_autogen/timestamp
 
 CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.obj: CMakeFiles/chatClient.dir/flags.make
 CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.obj: CMakeFiles/chatClient.dir/includes_CXX.rsp
 CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.obj: chatClient_autogen/mocs_compilation.cpp
 CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.obj: CMakeFiles/chatClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\chatClient.dir\chatClient_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\chatClient.dir\chatClient_autogen\mocs_compilation.cpp.obj -c C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\chatClient_autogen\mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\chatClient.dir\chatClient_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\chatClient.dir\chatClient_autogen\mocs_compilation.cpp.obj -c C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\chatClient_autogen\mocs_compilation.cpp
 
 CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\chatClient_autogen\mocs_compilation.cpp > CMakeFiles\chatClient.dir\chatClient_autogen\mocs_compilation.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\chatClient_autogen\mocs_compilation.cpp > CMakeFiles\chatClient.dir\chatClient_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\chatClient_autogen\mocs_compilation.cpp -o CMakeFiles\chatClient.dir\chatClient_autogen\mocs_compilation.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\chatClient_autogen\mocs_compilation.cpp -o CMakeFiles\chatClient.dir\chatClient_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/chatClient.dir/main.cpp.obj: CMakeFiles/chatClient.dir/flags.make
 CMakeFiles/chatClient.dir/main.cpp.obj: CMakeFiles/chatClient.dir/includes_CXX.rsp
-CMakeFiles/chatClient.dir/main.cpp.obj: C:/programming/qt_projects/chat/chatClient/main.cpp
+CMakeFiles/chatClient.dir/main.cpp.obj: C:/programming/qt_projects/qtChat/chatClient/main.cpp
 CMakeFiles/chatClient.dir/main.cpp.obj: CMakeFiles/chatClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/chatClient.dir/main.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chatClient.dir/main.cpp.obj -MF CMakeFiles\chatClient.dir\main.cpp.obj.d -o CMakeFiles\chatClient.dir\main.cpp.obj -c C:\programming\qt_projects\chat\chatClient\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/chatClient.dir/main.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chatClient.dir/main.cpp.obj -MF CMakeFiles\chatClient.dir\main.cpp.obj.d -o CMakeFiles\chatClient.dir\main.cpp.obj -c C:\programming\qt_projects\qtChat\chatClient\main.cpp
 
 CMakeFiles/chatClient.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chatClient.dir/main.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\programming\qt_projects\chat\chatClient\main.cpp > CMakeFiles\chatClient.dir\main.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\programming\qt_projects\qtChat\chatClient\main.cpp > CMakeFiles\chatClient.dir\main.cpp.i
 
 CMakeFiles/chatClient.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chatClient.dir/main.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\programming\qt_projects\chat\chatClient\main.cpp -o CMakeFiles\chatClient.dir\main.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\programming\qt_projects\qtChat\chatClient\main.cpp -o CMakeFiles\chatClient.dir\main.cpp.s
 
 CMakeFiles/chatClient.dir/client.cpp.obj: CMakeFiles/chatClient.dir/flags.make
 CMakeFiles/chatClient.dir/client.cpp.obj: CMakeFiles/chatClient.dir/includes_CXX.rsp
-CMakeFiles/chatClient.dir/client.cpp.obj: C:/programming/qt_projects/chat/chatClient/client.cpp
+CMakeFiles/chatClient.dir/client.cpp.obj: C:/programming/qt_projects/qtChat/chatClient/client.cpp
 CMakeFiles/chatClient.dir/client.cpp.obj: CMakeFiles/chatClient.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/chatClient.dir/client.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chatClient.dir/client.cpp.obj -MF CMakeFiles\chatClient.dir\client.cpp.obj.d -o CMakeFiles\chatClient.dir\client.cpp.obj -c C:\programming\qt_projects\chat\chatClient\client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/chatClient.dir/client.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chatClient.dir/client.cpp.obj -MF CMakeFiles\chatClient.dir\client.cpp.obj.d -o CMakeFiles\chatClient.dir\client.cpp.obj -c C:\programming\qt_projects\qtChat\chatClient\client.cpp
 
 CMakeFiles/chatClient.dir/client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chatClient.dir/client.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\programming\qt_projects\chat\chatClient\client.cpp > CMakeFiles\chatClient.dir\client.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\programming\qt_projects\qtChat\chatClient\client.cpp > CMakeFiles\chatClient.dir\client.cpp.i
 
 CMakeFiles/chatClient.dir/client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chatClient.dir/client.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\programming\qt_projects\chat\chatClient\client.cpp -o CMakeFiles\chatClient.dir\client.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\programming\qt_projects\qtChat\chatClient\client.cpp -o CMakeFiles\chatClient.dir\client.cpp.s
+
+CMakeFiles/chatClient.dir/networkmanager.cpp.obj: CMakeFiles/chatClient.dir/flags.make
+CMakeFiles/chatClient.dir/networkmanager.cpp.obj: CMakeFiles/chatClient.dir/includes_CXX.rsp
+CMakeFiles/chatClient.dir/networkmanager.cpp.obj: C:/programming/qt_projects/qtChat/chatClient/networkmanager.cpp
+CMakeFiles/chatClient.dir/networkmanager.cpp.obj: CMakeFiles/chatClient.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/chatClient.dir/networkmanager.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chatClient.dir/networkmanager.cpp.obj -MF CMakeFiles\chatClient.dir\networkmanager.cpp.obj.d -o CMakeFiles\chatClient.dir\networkmanager.cpp.obj -c C:\programming\qt_projects\qtChat\chatClient\networkmanager.cpp
+
+CMakeFiles/chatClient.dir/networkmanager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chatClient.dir/networkmanager.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\programming\qt_projects\qtChat\chatClient\networkmanager.cpp > CMakeFiles\chatClient.dir\networkmanager.cpp.i
+
+CMakeFiles/chatClient.dir/networkmanager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chatClient.dir/networkmanager.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\programming\qt_projects\qtChat\chatClient\networkmanager.cpp -o CMakeFiles\chatClient.dir\networkmanager.cpp.s
 
 # Object files for target chatClient
 chatClient_OBJECTS = \
 "CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/chatClient.dir/main.cpp.obj" \
-"CMakeFiles/chatClient.dir/client.cpp.obj"
+"CMakeFiles/chatClient.dir/client.cpp.obj" \
+"CMakeFiles/chatClient.dir/networkmanager.cpp.obj"
 
 # External object files for target chatClient
 chatClient_EXTERNAL_OBJECTS =
@@ -132,6 +148,7 @@ chatClient_EXTERNAL_OBJECTS =
 chatClient.exe: CMakeFiles/chatClient.dir/chatClient_autogen/mocs_compilation.cpp.obj
 chatClient.exe: CMakeFiles/chatClient.dir/main.cpp.obj
 chatClient.exe: CMakeFiles/chatClient.dir/client.cpp.obj
+chatClient.exe: CMakeFiles/chatClient.dir/networkmanager.cpp.obj
 chatClient.exe: CMakeFiles/chatClient.dir/build.make
 chatClient.exe: C:/Qt/6.12.0/mingw_64/lib/libQt6Widgets.a
 chatClient.exe: C:/Qt/6.12.0/mingw_64/lib/libQt6Network.a
@@ -142,7 +159,7 @@ chatClient.exe: chatClient.exe.manifest
 chatClient.exe: CMakeFiles/chatClient.dir/linkLibs.rsp
 chatClient.exe: CMakeFiles/chatClient.dir/objects1.rsp
 chatClient.exe: CMakeFiles/chatClient.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable chatClient.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable chatClient.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\chatClient.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +171,6 @@ CMakeFiles/chatClient.dir/clean:
 .PHONY : CMakeFiles/chatClient.dir/clean
 
 CMakeFiles/chatClient.dir/depend: chatClient_autogen/timestamp
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\programming\qt_projects\chat\chatClient C:\programming\qt_projects\chat\chatClient C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug C:\programming\qt_projects\chat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles\chatClient.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\programming\qt_projects\qtChat\chatClient C:\programming\qt_projects\qtChat\chatClient C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug C:\programming\qt_projects\qtChat\chatClient\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles\chatClient.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/chatClient.dir/depend
 

@@ -1,6 +1,6 @@
 CMakeFiles/chatClient.dir/client.cpp.obj: \
- C:\programming\qt_projects\chat\chatClient\client.cpp \
- C:\programming\qt_projects\chat\chatClient\client.h \
+ C:\programming\qt_projects\qtChat\chatClient\client.cpp \
+ C:\programming\qt_projects\qtChat\chatClient\client.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -395,7 +395,11 @@ CMakeFiles/chatClient.dir/client.cpp.obj: \
  C:/Qt/6.12.0/mingw_64/include/QtNetwork/qabstractsocket.h \
  C:/Qt/6.12.0/mingw_64/include/QtCore/qiodevice.h \
  C:/Qt/6.12.0/mingw_64/include/QtNetwork/qhostaddress.h \
- C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/chatClient_autogen/include/ui_client.h \
+ C:\programming\qt_projects\qtChat\chatClient\networkmanager.h \
+ C:/Qt/6.12.0/mingw_64/include/QtNetwork/QTcpServer \
+ C:/Qt/6.12.0/mingw_64/include/QtNetwork/qtcpserver.h \
+ C:/Qt/6.12.0/mingw_64/include/QtCore/QObject \
+ C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/chatClient_autogen/include/ui_client.h \
  C:/Qt/6.12.0/mingw_64/include/QtCore/QVariant \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qapplication.h \
@@ -421,14 +425,11 @@ CMakeFiles/chatClient.dir/client.cpp.obj: \
  C:/Qt/6.12.0/mingw_64/include/QtGui/qpen.h \
  C:/Qt/6.12.0/mingw_64/include/QtGui/qtextoption.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QMainWindow \
- C:/Qt/6.12.0/mingw_64/include/QtWidgets/QMenuBar \
- C:/Qt/6.12.0/mingw_64/include/QtWidgets/qmenubar.h \
- C:/Qt/6.12.0/mingw_64/include/QtWidgets/qmenu.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QPushButton \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qpushbutton.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qabstractbutton.h \
- C:/Qt/6.12.0/mingw_64/include/QtWidgets/QStatusBar \
- C:/Qt/6.12.0/mingw_64/include/QtWidgets/qstatusbar.h \
+ C:/Qt/6.12.0/mingw_64/include/QtWidgets/QStackedWidget \
+ C:/Qt/6.12.0/mingw_64/include/QtWidgets/qstackedwidget.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QTextEdit \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qtextedit.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \

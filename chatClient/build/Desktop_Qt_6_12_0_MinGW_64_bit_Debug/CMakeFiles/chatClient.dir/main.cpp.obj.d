@@ -1,6 +1,6 @@
 CMakeFiles/chatClient.dir/main.cpp.obj: \
- C:\programming\qt_projects\chat\chatClient\main.cpp \
- C:\programming\qt_projects\chat\chatClient\client.h \
+ C:\programming\qt_projects\qtChat\chatClient\main.cpp \
+ C:\programming\qt_projects\qtChat\chatClient\client.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -395,6 +395,10 @@ CMakeFiles/chatClient.dir/main.cpp.obj: \
  C:/Qt/6.12.0/mingw_64/include/QtNetwork/qabstractsocket.h \
  C:/Qt/6.12.0/mingw_64/include/QtCore/qiodevice.h \
  C:/Qt/6.12.0/mingw_64/include/QtNetwork/qhostaddress.h \
+ C:\programming\qt_projects\qtChat\chatClient\networkmanager.h \
+ C:/Qt/6.12.0/mingw_64/include/QtNetwork/QTcpServer \
+ C:/Qt/6.12.0/mingw_64/include/QtNetwork/qtcpserver.h \
+ C:/Qt/6.12.0/mingw_64/include/QtCore/QObject \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qapplication.h \
  C:/Qt/6.12.0/mingw_64/include/QtCore/qcoreapplication.h \

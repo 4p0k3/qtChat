@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\programming\qt_projects\chat\chatServer
+CMAKE_SOURCE_DIR = C:\programming\qt_projects\qtChat\chatServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\programming\qt_projects\chat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug
+CMAKE_BINARY_DIR = C:\programming\qt_projects\qtChat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug
 
 # Utility rule file for chatServer_autogen_timestamp_deps.
 
@@ -77,6 +77,6 @@ CMakeFiles/chatServer_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/chatServer_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/chatServer_autogen_timestamp_deps.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\programming\qt_projects\chat\chatServer C:\programming\qt_projects\chat\chatServer C:\programming\qt_projects\chat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug C:\programming\qt_projects\chat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug C:\programming\qt_projects\chat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles\chatServer_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\programming\qt_projects\qtChat\chatServer C:\programming\qt_projects\qtChat\chatServer C:\programming\qt_projects\qtChat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug C:\programming\qt_projects\qtChat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug C:\programming\qt_projects\qtChat\chatServer\build\Desktop_Qt_6_12_0_MinGW_64_bit_Debug\CMakeFiles\chatServer_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/chatServer_autogen_timestamp_deps.dir/depend
 

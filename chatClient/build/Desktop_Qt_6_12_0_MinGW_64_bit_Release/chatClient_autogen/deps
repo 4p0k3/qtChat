@@ -1,4 +1,5 @@
 chatClient_autogen/timestamp: \
+	C:/Qt/6.12.0/mingw_64/include/QtCore/QObject \
 	C:/Qt/6.12.0/mingw_64/include/QtCore/q17memory.h \
 	C:/Qt/6.12.0/mingw_64/include/QtCore/q20bit.h \
 	C:/Qt/6.12.0/mingw_64/include/QtCore/q20functional.h \
@@ -155,9 +156,11 @@ chatClient_autogen/timestamp: \
 	C:/Qt/6.12.0/mingw_64/include/QtGui/qtransform.h \
 	C:/Qt/6.12.0/mingw_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/6.12.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+	C:/Qt/6.12.0/mingw_64/include/QtNetwork/QTcpServer \
 	C:/Qt/6.12.0/mingw_64/include/QtNetwork/QTcpSocket \
 	C:/Qt/6.12.0/mingw_64/include/QtNetwork/qabstractsocket.h \
 	C:/Qt/6.12.0/mingw_64/include/QtNetwork/qhostaddress.h \
+	C:/Qt/6.12.0/mingw_64/include/QtNetwork/qtcpserver.h \
 	C:/Qt/6.12.0/mingw_64/include/QtNetwork/qtcpsocket.h \
 	C:/Qt/6.12.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
 	C:/Qt/6.12.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
@@ -694,16 +697,18 @@ chatClient_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-	C:/programming/qt_projects/chat/chatClient/CMakeLists.txt \
-	C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/.qtcreator/cmake-helper/maintenance_tool_provider.cmake \
-	C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/.qtcreator/cmake-helper/package-manager.cmake \
-	C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/.qtcreator/cmake-helper/qtcreator-project.cmake \
-	C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
-	C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
-	C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/CMakeFiles/3.30.5/CMakeSystem.cmake \
-	C:/programming/qt_projects/chat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/chatClient_autogen/moc_predefs.h \
-	C:/programming/qt_projects/chat/chatClient/client.cpp \
-	C:/programming/qt_projects/chat/chatClient/client.h \
-	C:/programming/qt_projects/chat/chatClient/main.cpp \
-	C:/programming/qt_projects/chat/chatClient/client.ui \
+	C:/programming/qt_projects/qtChat/chatClient/CMakeLists.txt \
+	C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/.qtcreator/cmake-helper/maintenance_tool_provider.cmake \
+	C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/.qtcreator/cmake-helper/package-manager.cmake \
+	C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/.qtcreator/cmake-helper/qtcreator-project.cmake \
+	C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
+	C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
+	C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/CMakeFiles/3.30.5/CMakeSystem.cmake \
+	C:/programming/qt_projects/qtChat/chatClient/build/Desktop_Qt_6_12_0_MinGW_64_bit_Release/chatClient_autogen/moc_predefs.h \
+	C:/programming/qt_projects/qtChat/chatClient/client.cpp \
+	C:/programming/qt_projects/qtChat/chatClient/client.h \
+	C:/programming/qt_projects/qtChat/chatClient/main.cpp \
+	C:/programming/qt_projects/qtChat/chatClient/networkmanager.cpp \
+	C:/programming/qt_projects/qtChat/chatClient/networkmanager.h \
+	C:/programming/qt_projects/qtChat/chatClient/client.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

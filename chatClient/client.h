@@ -5,6 +5,8 @@
 
 #include <QTcpSocket>
 
+#include "networkmanager.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Client;
@@ -19,13 +21,26 @@ public:
     explicit Client(QWidget *parent = nullptr);
     ~Client() override;
 private slots:
-    void onReadyRead();
+    void onNewMessageRecieved(QString text);
+    void onActionSuccessful(ActionType type);
 
-    void on_pushButton_clicked();
+    void on_btnCreateChat_clicked();
+
+    void on_btnConnect_clicked();
+
+    void on_btnMenu_clicked();
+
+    void on_btnSendMessage_clicked();
+
+    void on_btnDeleteChat_clicked();
+
+    void on_btnReturn_clicked();
+
+    void on_btnLeaveChat_clicked();
 
 private:
     Ui::Client *ui;
-    QTcpSocket *socket;
     QString myNickname;
+    NetworkManager *networkManager;
 };
 #endif // CLIENT_H

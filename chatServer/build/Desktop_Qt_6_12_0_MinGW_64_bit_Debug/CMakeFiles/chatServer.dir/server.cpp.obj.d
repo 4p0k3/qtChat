@@ -1,6 +1,6 @@
 CMakeFiles/chatServer.dir/server.cpp.obj: \
- C:\programming\qt_projects\chat\chatServer\server.cpp \
- C:\programming\qt_projects\chat\chatServer\server.h \
+ C:\programming\qt_projects\qtChat\chatServer\server.cpp \
+ C:\programming\qt_projects\qtChat\chatServer\server.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -397,7 +397,7 @@ CMakeFiles/chatServer.dir/server.cpp.obj: \
  C:/Qt/6.12.0/mingw_64/include/QtNetwork/qhostaddress.h \
  C:/Qt/6.12.0/mingw_64/include/QtNetwork/QTcpSocket \
  C:/Qt/6.12.0/mingw_64/include/QtNetwork/qtcpsocket.h \
- C:/programming/qt_projects/chat/chatServer/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/chatServer_autogen/include/ui_server.h \
+ C:/programming/qt_projects/qtChat/chatServer/build/Desktop_Qt_6_12_0_MinGW_64_bit_Debug/chatServer_autogen/include/ui_server.h \
  C:/Qt/6.12.0/mingw_64/include/QtCore/QVariant \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qapplication.h \
@@ -413,18 +413,23 @@ CMakeFiles/chatServer.dir/server.cpp.obj: \
  C:/Qt/6.12.0/mingw_64/include/QtGui/qinputmethod.h \
  C:/Qt/6.12.0/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.12.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/Qt/6.12.0/mingw_64/include/QtWidgets/QLabel \
+ C:/Qt/6.12.0/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.12.0/mingw_64/include/QtWidgets/qframe.h \
+ C:/Qt/6.12.0/mingw_64/include/QtGui/qpicture.h \
+ C:/Qt/6.12.0/mingw_64/include/QtGui/qtextdocument.h \
+ C:/Qt/6.12.0/mingw_64/include/QtCore/qurl.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QMenuBar \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qmenubar.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qmenu.h \
+ C:/Qt/6.12.0/mingw_64/include/QtWidgets/QStackedWidget \
+ C:/Qt/6.12.0/mingw_64/include/QtWidgets/qstackedwidget.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QStatusBar \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qstatusbar.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QTextEdit \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qtextedit.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
- C:/Qt/6.12.0/mingw_64/include/QtWidgets/qframe.h \
- C:/Qt/6.12.0/mingw_64/include/QtGui/qtextdocument.h \
- C:/Qt/6.12.0/mingw_64/include/QtCore/qurl.h \
  C:/Qt/6.12.0/mingw_64/include/QtGui/qtextoption.h \
  C:/Qt/6.12.0/mingw_64/include/QtGui/qtextcursor.h \
  C:/Qt/6.12.0/mingw_64/include/QtGui/qtextformat.h \

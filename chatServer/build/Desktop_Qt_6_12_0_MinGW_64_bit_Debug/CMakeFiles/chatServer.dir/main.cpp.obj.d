@@ -1,6 +1,6 @@
 CMakeFiles/chatServer.dir/main.cpp.obj: \
- C:\programming\qt_projects\chat\chatServer\main.cpp \
- C:\programming\qt_projects\chat\chatServer\server.h \
+ C:\programming\qt_projects\qtChat\chatServer\main.cpp \
+ C:\programming\qt_projects\qtChat\chatServer\server.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.12.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
