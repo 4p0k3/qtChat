@@ -1,5 +1,4 @@
 #include "networkmanager.h"
-#include <QMessageBox>
 
 NetworkManager::NetworkManager(QObject *parent) : QObject(parent), ip("127.0.0.1"), socket(nullptr), tcpServer(nullptr) {
 }
@@ -34,39 +33,81 @@ void NetworkManager::leaveChat(){
     emit actionSuccessful(LeftChat);
 }
 
-void NetworkManager::createChat(QString ip){
+void NetworkManager::createChat(QString ip)
+{
     if (tcpServer == nullptr) {
         tcpServer = new QTcpServer(this);
         connect(tcpServer, &QTcpServer::newConnection, this, &NetworkManager::onNewConnection);
     }
-    if (tcpServer->listen(QHostAddress::Any, 0)){
-        qDebug() << "Server started!";
-        QHostAddress currentIP = tcpServer->serverAddress();
-        quint16 currentPort = tcpServer->serverPort();
 
+    if (tcpServer->listen(QHostAddress::Any, 0)){
+        quint16 currentPort = tcpServer->serverPort();
         isHostMode = true;
 
+
         emit newMessageRecieved(QString("Server started on %1:%2!").arg(ip).arg(currentPort));
-        joinChat(ip, currentPort);
+        joinChat("127.0.0.1", currentPort);
     }
-    else{
+    else {
         qDebug() << "Starting error: " << tcpServer->errorString();
     }
 }
 
 void NetworkManager::onReadyRead(){
-    QByteArray data = socket->readAll();
-    QString text = QString::fromUtf8(data).trimmed();
-    if (text.isEmpty()) {
-        return;
+    QDataStream in(socket);
+    in.setVersion(QDataStream::Qt_6_0);
+
+    while (true) {
+        in.startTransaction();
+        QByteArray data;
+        in >> data;
+
+        if (!in.commitTransaction()){
+            break; // Если пакет не докачался - ждем дальше
+        }
+
+        QJsonParseError error;
+        QJsonDocument doc = QJsonDocument::fromJson(data, &error);
+
+        if (error.error == QJsonParseError::NoError && doc.isObject()) {
+            QJsonObject json = doc.object();
+            QString type = json["type"].toString();
+
+            if (type == "message"){
+                QString senderName = json["sender"].toString();
+                QString text = json["text"].toString();
+
+                // Читаем время
+                qint64 timestamp = json["timestamp"].toVariant().toLongLong();
+                QDateTime time = QDateTime::fromMSecsSinceEpoch(timestamp);
+                QString timeString = time.toString("HH:mm:ss");
+
+                QString formattedMessage = "[" + timeString + "] " + senderName + ": " + text;
+                emit newMessageRecieved(formattedMessage);
+            }
+        }
+        else{
+            QString text = QString::fromUtf8(data).trimmed();
+            if (!text.isEmpty()) {
+                emit newMessageRecieved(text);
+            }
+        }
     }
-    emit newMessageRecieved(text);
 }
 
 void NetworkManager::sendMessage(QString text)
 {
     if (socket != nullptr && socket->isOpen()) {
-        socket->write(text.toUtf8());
+        QJsonObject json;
+        json["type"] = "message";
+        json["sender"] = myNickname;
+        json["text"] = text;
+        QJsonDocument doc(json);
+        QByteArray data = doc.toJson(QJsonDocument::Compact);
+
+        QDataStream out(socket);
+        out.setVersion(QDataStream::Qt_6_0);
+        out << data;
     } else {
         emit newMessageRecieved("You aren't connected to the chat!");
     }
@@ -76,10 +117,39 @@ void NetworkManager::onServerReadyRead()
 {
     QTcpSocket *clientSocket = (QTcpSocket*)sender();
 
-    QByteArray data = clientSocket->readAll();
+    QDataStream in(clientSocket);
+    in.setVersion(QDataStream::Qt_6_0);
 
-    for(int i = 0; i < clients.size(); i++) {
-        clients[i]->write(data);
+    while (true) {
+        in.startTransaction();
+        QByteArray data;
+        in >> data;
+
+        if (!in.commitTransaction()) {
+            break;
+        }
+
+        // Вскрываем пакет от клиента
+        QJsonParseError error;
+        QJsonDocument doc = QJsonDocument::fromJson(data, &error);
+
+        if (error.error == QJsonParseError::NoError && doc.isObject()) {
+            QJsonObject json = doc.object();
+
+            // СЕРВЕР СТАВИТ ЕДИНОЕ МИРОВОЕ ВРЕМЯ!
+            json["timestamp"] = QDateTime::currentMSecsSinceEpoch();
+
+            // Упаковываем обратно
+            QJsonDocument newDoc(json);
+            QByteArray newData = newDoc.toJson(QJsonDocument::Compact);
+
+            // Рассылаем всем гостям через умную трубу (Framing)
+            for(int i = 0; i < clients.size(); i++) {
+                QDataStream out(clients[i]);
+                out.setVersion(QDataStream::Qt_6_0);
+                out << newData;
+            }
+        }
     }
 }
 
@@ -92,7 +162,9 @@ void NetworkManager::onNewConnection(){
 
     QString sysMsg = "A new user connected!";
     for(int i = 0; i < clients.size(); i++) {
-        clients[i]->write(sysMsg.toUtf8());
+        QDataStream out(clients[i]);
+        out.setVersion(QDataStream::Qt_6_0);
+        out << sysMsg.toUtf8();
     }
 }
 
@@ -103,7 +175,9 @@ void NetworkManager::onDisconnected(){
 
     QString sysMsg = "A user disconnected";
     for(int i = 0; i < clients.size(); i++) {
-        clients[i]->write(sysMsg.toUtf8());
+        QDataStream out(clients[i]);
+        out.setVersion(QDataStream::Qt_6_0);
+        out << sysMsg.toUtf8();
     }
 }
 
@@ -121,3 +195,11 @@ void NetworkManager::onDisconnection()
 bool NetworkManager::isHost() const{
     return isHostMode;
 }
+void NetworkManager::setNickname(QString name){
+    if (name.isEmpty() || name.trimmed() == "") {
+        myNickname = "Anonymous";
+    } else {
+        myNickname = name;
+    }
+}
+

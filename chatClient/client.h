@@ -38,6 +38,8 @@ private slots:
 
     void on_btnLeaveChat_clicked();
 
+    void on_btnClearChat_clicked();
+
 private:
     Ui::Client *ui;
     QString myNickname;

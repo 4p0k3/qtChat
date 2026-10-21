@@ -49,11 +49,10 @@ void Client::onActionSuccessful(ActionType type){
 }
 
 void Client::on_btnCreateChat_clicked()
-{
-    QString enteredIp = ui->lineIPInput->text();
-    quint16 enteredPort = ui->linePortInput->text().toUShort();
-
-    networkManager->createChat(enteredIp);
+{   QString ip = ui->lineIPInput->text();
+    ui->labelNicknameDisplay->setText(ui->lineNicknameInput->text());
+    networkManager->setNickname(ui->lineNicknameInput->text());
+    networkManager->createChat(ip);
 }
 
 void Client::on_btnConnect_clicked()
@@ -61,7 +60,10 @@ void Client::on_btnConnect_clicked()
     QString enteredIp = ui->lineIPInput->text();
     quint16 enteredPort = ui->linePortInput->text().toUShort();
 
+    networkManager->setNickname(ui->lineNicknameInput->text());
+    ui->labelNicknameDisplay->setText(ui->lineNicknameInput->text());
     networkManager->joinChat(enteredIp, enteredPort);
+
 }
 
 void Client::on_btnSendMessage_clicked()
@@ -91,5 +93,11 @@ void Client::on_btnReturn_clicked()
 void Client::on_btnLeaveChat_clicked()
 {
     networkManager->leaveChat();
+}
+
+
+void Client::on_btnClearChat_clicked()
+{
+    ui->editMessageHistory->clear();
 }
 

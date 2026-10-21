@@ -4,11 +4,17 @@
 #include <QTcpSocket>
 #include <QTcpServer>
 #include <QObject>
-
+#include <QJsonObject>
+#include <QJsonDocument>
+#include <QDataStream>
+#include <QDateTime>
+#include <QJsonParseError>
+#include <QNetworkInterface>
 enum ActionType{
     JoinedChat,
     LeftChat
 };
+
 
 class NetworkManager : public QObject
 {
@@ -21,6 +27,9 @@ public:
     void createChat(QString ip);
     void leaveChat();
     bool isHost() const;
+    void setNickname(QString name);
+
+
 
 signals:
     void newMessageRecieved(QString text);
@@ -28,13 +37,14 @@ signals:
 
 private:
     QTcpSocket *socket;
-    QString myNickname;
     QTcpServer *tcpServer;
     QList<QTcpSocket*> clients;
+
 
     QString ip;
     quint16 port;
 
+    QString myNickname;
     bool isHostMode {};
 
 private slots:

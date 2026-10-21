@@ -30,11 +30,14 @@
      <widget class="QPushButton" name="btnCreateChat">
       <property name="geometry">
        <rect>
-        <x>350</x>
-        <y>250</y>
+        <x>360</x>
+        <y>290</y>
         <width>90</width>
         <height>29</height>
        </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>Create chat</string>
@@ -43,11 +46,14 @@
      <widget class="QPushButton" name="btnConnect">
       <property name="geometry">
        <rect>
-        <x>340</x>
-        <y>340</y>
+        <x>350</x>
+        <y>370</y>
         <width>121</width>
         <height>29</height>
        </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>Connect to chat</string>
@@ -56,11 +62,14 @@
      <widget class="QLineEdit" name="lineIPInput">
       <property name="geometry">
        <rect>
-        <x>310</x>
-        <y>300</y>
+        <x>330</x>
+        <y>330</y>
         <width>171</width>
         <height>28</height>
        </rect>
+      </property>
+      <property name="text">
+       <string/>
       </property>
       <property name="placeholderText">
        <string>ip address</string>
@@ -69,8 +78,8 @@
      <widget class="QLineEdit" name="linePortInput">
       <property name="geometry">
        <rect>
-        <x>360</x>
-        <y>390</y>
+        <x>370</x>
+        <y>410</y>
         <width>71</width>
         <height>28</height>
        </rect>
@@ -88,11 +97,30 @@
         <height>29</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="text">
        <string>Return to chat</string>
       </property>
       <property name="flat">
        <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineNicknameInput">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>113</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Anonymous</string>
+      </property>
+      <property name="placeholderText">
+       <string>nickname</string>
       </property>
      </widget>
     </widget>
@@ -119,8 +147,11 @@
         <height>29</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="text">
-       <string>Send</string>
+       <string>Send </string>
       </property>
       <property name="default">
        <bool>false</bool>
@@ -145,6 +176,9 @@
         <height>29</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="text">
        <string>Menu</string>
       </property>
@@ -153,13 +187,51 @@
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>540</y>
+        <y>80</y>
         <width>90</width>
         <height>29</height>
        </rect>
       </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="text">
        <string>Delete chat</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelNicknameDisplay">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>550</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nickname</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::TextFormat::AutoText</enum>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnClearChat">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>90</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Clear chat</string>
       </property>
      </widget>
     </widget>
