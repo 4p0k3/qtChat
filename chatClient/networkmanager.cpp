@@ -1,4 +1,10 @@
 #include "networkmanager.h"
+#include <QJsonObject>
+#include <QJsonDocument>
+#include <QDataStream>
+#include <QDateTime>
+#include <QJsonParseError>
+#include <QDebug>
 
 NetworkManager::NetworkManager(QObject *parent) : QObject(parent), ip("127.0.0.1"), socket(nullptr), tcpServer(nullptr) {
 }
@@ -84,12 +90,14 @@ void NetworkManager::onReadyRead(){
 
                 QString formattedMessage = "[" + timeString + "] " + senderName + ": " + text;
                 emit newMessageRecieved(formattedMessage);
+                emit messageParsed(timeString, senderName, text);
             }
         }
         else{
             QString text = QString::fromUtf8(data).trimmed();
             if (!text.isEmpty()) {
                 emit newMessageRecieved(text);
+
             }
         }
     }
@@ -110,6 +118,7 @@ void NetworkManager::sendMessage(QString text)
         out << data;
     } else {
         emit newMessageRecieved("You aren't connected to the chat!");
+
     }
 }
 
@@ -202,4 +211,3 @@ void NetworkManager::setNickname(QString name){
         myNickname = name;
     }
 }
-

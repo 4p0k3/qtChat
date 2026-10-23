@@ -12,10 +12,13 @@ Client::Client(QWidget *parent)
     //ui->btnReturn->hide();
 
     networkManager = new NetworkManager(this);
+    dbManager = new DbManager(this);
 
     connect(networkManager, &NetworkManager::newMessageRecieved, this, &Client::onNewMessageRecieved);
     connect(networkManager, &NetworkManager::actionSuccessful, this, &Client::onActionSuccessful);
-    connect(ui->lineMessageInput, &QLineEdit::returnPressed, this, &Client::on_btnSendMessage_clicked); //linking Enter keyboard button and send app button
+    connect(networkManager, &NetworkManager::messageParsed, dbManager, &DbManager::saveMessage);
+    connect(ui->lineMessageInput, &QLineEdit::returnPressed, this, &Client::on_btnSendMessage_clicked);
+       //linking Enter keyboard button and send app button
 
 }
 
@@ -88,13 +91,6 @@ void Client::on_btnReturn_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
 }
-
-
-void Client::on_btnLeaveChat_clicked()
-{
-    networkManager->leaveChat();
-}
-
 
 void Client::on_btnClearChat_clicked()
 {

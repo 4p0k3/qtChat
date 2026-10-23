@@ -4,12 +4,8 @@
 #include <QTcpSocket>
 #include <QTcpServer>
 #include <QObject>
-#include <QJsonObject>
-#include <QJsonDocument>
-#include <QDataStream>
-#include <QDateTime>
-#include <QJsonParseError>
-#include <QNetworkInterface>
+#include <QString>
+
 enum ActionType{
     JoinedChat,
     LeftChat
@@ -34,7 +30,7 @@ public:
 signals:
     void newMessageRecieved(QString text);
     void actionSuccessful(ActionType type);
-
+    void messageParsed(const QString &timestamp, const QString &sender, const QString &text);
 private:
     QTcpSocket *socket;
     QTcpServer *tcpServer;
@@ -46,6 +42,8 @@ private:
 
     QString myNickname;
     bool isHostMode {};
+
+    void initDatabase();
 
 private slots:
     void onReadyRead();

@@ -6,6 +6,7 @@
 #include <QTcpSocket>
 
 #include "networkmanager.h"
+#include "dbmanager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -36,13 +37,12 @@ private slots:
 
     void on_btnReturn_clicked();
 
-    void on_btnLeaveChat_clicked();
-
     void on_btnClearChat_clicked();
 
 private:
     Ui::Client *ui;
     QString myNickname;
     NetworkManager *networkManager;
+    DbManager *dbManager;
 };
 #endif // CLIENT_H
